@@ -4,34 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
-    <div id="fullPageWrapper">
-      <div id="fullPageSidebarWrapper">
-        <div id="sidebarWrapper">
-          <img id="headerLogo" src="img/LaurenLogo2.png" alt="Lauren Logo" />
+    <div id="websiteWrapper">
+      <div id="sidebar">
+        <div id="hamburgerMenu">
+          <i class="fa fa-bars"></i>
         </div>
-        <div class="container">
-          <div id="headerWrapper"></div>
+        <ul id="navLinks">
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <ul id="socialLinks">
+          <li>
+            <a href="https://twitter.com/LaurenReavesDev" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/_lauren.marie.x/?hl=en"
+              target="_blank"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/Lreaves18" target="_blank"
+              ><i class="fa fa-codepen"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/Lreaves18" target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div id="fullPageWrapper">
+        <div id="heroArea">
           <div id="heroOverlay"></div>
-          <div id="heroWrapper"></div>
+          <div id="heroText">
+            <img src="img/LaurenLogo2.png" alt="Logo" id="LRLogo" />
+            <h1>Hey! My name is Lauren, and I'm a Full Stack Web Developer.</h1>
+          </div>
         </div>
-        <div id="moreContent">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            asperiores nobis sint nostrum fugiat inventore illum fuga magni.
-            Tempora, cum eius? Esse consequatur debitis numquam! Eum ex debitis
-            odio sequi alias incidunt? Dolores eligendi ipsa molestiae quas qui
-            rem laudantium distinctio in esse consequuntur! Ut, expedita id?
-            Aperiam, atque est assumenda architecto dicta dolor ullam placeat
-            aliquid veritatis neque repellendus nobis omnis. Saepe explicabo
-            recusandae, mollitia repellendus rem reiciendis labore ratione
-            maxime cum commodi quod eligendi facere fugiat architecto et
-            voluptatibus officia deleniti repudiandae debitis accusantium, modi
-            consectetur nulla! Adipisci error laborum repellat repudiandae
-            mollitia! Eaque illo commodi sed animi!
-          </p>
+        <div id="mainContentWrapper">
+          <div id="aboutMeWrapper">
+            <img src="img/placeholderPortrait.jpg" alt="" />
+            <div id="aboutMe">
+              <div id="imageBorder"></div>
+            </div>
+            <h1>About Me:</h1>
+            <p>
+              My name is Lauren Reaves and I'm a <span id="age">24</span> year
+              old Full Stack Web Developer based in central Alabama. I'm a
+              hardworker who is very passionate about technology and web
+              development. I love leaning new things and exploring new ideas.
+              I'm a very quick learner with exceptional problem solving skills
+              and an expert level eye for details.
+            </p>
+          </div>
+          <div id="experienceWrapper">
+            <h1>Experience</h1>
+            <ul>
+              <li>
+                <img src="img/html5.png" alt="" class="experienceLogos" />
+              </li>
+              <li><img src="img/css3.png" alt="" class="experienceLogos" /></li>
+              <li><img src="img/js.png" alt="" class="experienceLogos" /></li>
+              <li>
+                <img src="img/bootstrap.jpg" alt="" class="experienceLogo" />
+              </li>
+              <li><img src="img/php.jpg" alt="" class="experienceLogo" /></li>
+              <li>
+                <img src="img/mysql.jpg" alt="" class="experienceLogo" />
+              </li>
+              <li>
+                <img src="img/wordpress.jpg" alt="" class="experienceLogo" />
+              </li>
+              <li><img src="img/api.jpg" alt="" class="experienceLogo" /></li>
+            </ul>
+          </div>
+          <div id="quoteBanner">
+            <h3>
+              “Digital design is like painting, except the paint never dries."
+              -Neville Brody
+            </h3>
+          </div>
+          <div id="cardWrapper">
+            <h1>My Work:</h1>
+            <div class="card">
+              <h2>Latest Project</h2>
+              <img src="img/laptop.png" alt="" height="400px" />
+            </div>
+            <div class="card">
+              <h2>All Projects</h2>
+              <img src="img/laptop.png" alt="" height="400px" />
+            </div>
+          </div>
+          <div id="callToAction">
+            <h1>Have an idea? Let's make it a reality!</h1>
+            <form action="POST" method="POST" id="contactForm">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Your Name"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+              />
+              <textarea
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input type="submit" name="submit" id="submit" />
+            </form>
+          </div>
+          <footer>
+            <p>Copyright &copy; 2020 All Rights Reserved.</p>
+          </footer>
         </div>
       </div>
     </div>
